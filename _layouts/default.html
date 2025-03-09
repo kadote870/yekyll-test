@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>{{ page.title }} | {{ site.title }}</title>
-    <link rel="stylesheet" href="/assets/style.css">
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
 </head>
 <body>
-    {% include header.html %}  <!-- Wstawienie wspólnego nagłówka -->
-
-    <main>
-        {{ content }}  <!-- Tutaj Jekyll wstawi treść danej strony -->
-    </main>
-
-    {% include footer.html %}  <!-- Wstawienie wspólnej stopki -->
+  <header>
+    <h1>{{ site.title }}</h1>
+  </header>
+  <main>
+    {{ content }}
+  </main>
+  <footer>
+    <p>© {{ site.time | date: "%Y" }} {{ site.title }}</p>
+  </footer>
 </body>
 </html>
