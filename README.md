@@ -2,4 +2,4 @@
 
 {{ site.title }}
 
-{{ stie.author }}
+{{ site.author }}
