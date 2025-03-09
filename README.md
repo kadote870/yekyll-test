@@ -5,3 +5,5 @@
 {{ site.author }}
 
 {{site.data.templates.test_text_template}}
+
+{{site.data.templates.postman}}

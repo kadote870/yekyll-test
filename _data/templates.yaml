@@ -1,1 +1,2 @@
 test_text_template: test zmiennej
+postman: {{$randomEmail}}
